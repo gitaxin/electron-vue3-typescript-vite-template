@@ -16,8 +16,8 @@ function createWindow() {
     });
     if (app.isPackaged) {
         //加载 VUE构建后的index.html，electronr打包时会将index.html同目录的文件一同打到包中
-        // 当前ts文件编译后，按照配置会编译到dist_app目录下，以dist_app目录来查找要加载的文件，
-        mainWindow.loadFile(path.join(__dirname, '../dist/index.html')); //__dirname:当前main.ts文件的目录
+        // 当前ts文件编译后，按照配置会编译到dist/main目录下，以dist/main目录来查找要加载的文件，
+        mainWindow.loadFile(path.join(__dirname, '../render/index.html')); //__dirname:当前main.ts文件的目录
     }
     else {
         mainWindow.loadURL('http://localhost:3000/');

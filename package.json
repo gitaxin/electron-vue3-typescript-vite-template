@@ -2,7 +2,7 @@
   "name": "your_app_name",
   "private": true,
   "version": "1.0.0",
-  "main": "dist_app/app.js",
+  "main": "dist/main/app.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -31,7 +31,7 @@
   "build": {
     "appId": "cn.giteasy",
     "directories": {
-      "output": "dist_electron"
+      "output": "dist/app"
     }
   }
 }
